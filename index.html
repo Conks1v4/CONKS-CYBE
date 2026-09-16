@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CONKS CYBER ACADEMY</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">◈ CONKS <span>CYBER ACADEMY</span></div>
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#cursos">Cursos</a>
+    <a href="#desafios">Desafios</a>
+    <a href="#conquistas">Conquistas</a>
+  </nav>
+  <div class="profile">
+    <b id="level">LVL 1</b>
+    <span id="xpTop">0 XP</span>
+  </div>
+</header>
+
+<main>
+
+<section class="hero" id="inicio">
+  <div class="heroText">
+    <div class="tag">CYBERSECURITY TRAINING PLATFORM</div>
+    <h1>APRENDA.<br><span>PRATIQUE.</span><br>PROTEJA.</h1>
+    <p>
+      Uma academia completa de cibersegurança, do absoluto zero
+      até conceitos avançados de defesa, investigação, segurança
+      ofensiva autorizada e arquitetura segura.
+    </p>
+    <div class="heroButtons">
+      <button onclick="scrollToCourses()">COMEÇAR CURSO</button>
+      <button class="ghost" onclick="scrollToChallenges()">DESAFIOS</button>
+    </div>
+  </div>
+
+  <div class="terminal">
+    <div class="terminalTop">
+      <i></i><i></i><i></i>
+      <span>conks@academy:~$</span>
+    </div>
+    <div class="terminalBody">
+      <p><b>CONKS CYBER ACADEMY</b></p>
+      <p>Initializing training system...</p>
+      <p>Modules loaded: <b id="terminalModules">0</b></p>
+      <p>Lessons loaded: <b id="terminalLessons">0</b></p>
+      <p>Knowledge level: <b id="terminalLevel">BEGINNER</b></p>
+      <p class="cursor">█</p>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div><b id="statXP">0</b><span>XP TOTAL</span></div>
+  <div><b id="statLessons">0</b><span>AULAS CONCLUÍDAS</span></div>
+  <div><b id="statChallenges">0</b><span>DESAFIOS</span></div>
+  <div><b id="statBadges">0</b><span>CONQUISTAS</span></div>
+</section>
+
+<section class="section" id="cursos">
+  <div class="sectionHead">
+    <div>
+      <small>ACADEMY // CURRICULUM</small>
+      <h2>Trilha completa de Cybersegurança</h2>
+    </div>
+    <div class="overall">
+      <span>PROGRESSO</span>
+      <b id="overallProgress">0%</b>
+    </div>
+  </div>
+
+  <div class="progressLine"><i id="overallBar"></i></div>
+  <div id="coursesGrid" class="coursesGrid"></div>
+</section>
+
+<section class="section" id="desafios">
+  <div class="sectionHead">
+    <div>
+      <small>ACADEMY // PRACTICE</small>
+      <h2>Laboratório de desafios</h2>
+    </div>
+  </div>
+  <div id="challengesGrid" class="challengesGrid"></div>
+</section>
+
+<section class="section" id="conquistas">
+  <div class="sectionHead">
+    <div>
+      <small>ACADEMY // ACHIEVEMENTS</small>
+      <h2>Conquistas</h2>
+    </div>
+  </div>
+  <div id="badgesGrid" class="badgesGrid"></div>
+</section>
+
+</main>
+
+<div id="studyScreen" class="studyScreen">
+  <div class="studyTop">
+    <button class="backBtn" onclick="closeStudy()">← VOLTAR À ACADEMIA</button>
+    <div class="studyXP">
+      <b id="studyXP">0 XP</b>
+      <span id="studyLevel">LVL 1</span>
+    </div>
+  </div>
+  <div id="studyContent"></div>
+</div>
+
+<div class="modal" id="modal">
+  <div class="modalBox">
+    <button class="close" onclick="closeModal()">×</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<footer>
+  <b>◈ CONKS CYBER ACADEMY</b>
+  <span>Aprender segurança é aprender a proteger.</span>
+</footer>
+
+<script src="js/cursos.js"></script>
+<script src="js/desafios.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
